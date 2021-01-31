@@ -15,15 +15,10 @@ public class JavaLogin{
 
 	JavaLogin(){
 		f = new JFrame("Framey");
-
-		name = new JTextField("",13);
+		
 		user = new JTextField("",13);
 		pass = new JTextField("",13);
 
-		signin = new JButton("Sign In");
-		signin.addActionListener(this);
-		signup = new JButton("Sign Up");
-		signup.addActionListener(this);
 		next = new JButton("Sign in");
 		next.addActionListener(this);
 		done = new JButton("Sign up");
