@@ -19,9 +19,9 @@ public class JavaLogin{
 		user = new JTextField("",13);
 		pass = new JTextField("",13);
 
-		next = new JButton("Sign in");
+		next = new JButton("Next");
 		next.addActionListener(this);
-		done = new JButton("Sign up");
+		done = new JButton("Done");
 		done.addActionListener(this);
 		retry = new JButton("retry");
 		retry.addActionListener(this);
