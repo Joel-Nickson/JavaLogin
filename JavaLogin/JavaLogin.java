@@ -43,7 +43,7 @@ public class JavaLogin{
 		s_panel = new JPanel();
 		
 		user = new JTextField("Username");
-		JLabel label = new JLabel("\t BLA BLA BLA ");
+		JLabel label = new JLabel("\t BLA BLA BLA ");		// TODO : make the textfield round
 		
 		s_panel.setLayout(new BorderLayout());
 		s_loginbutton.setLayout(new FlowLayout());
