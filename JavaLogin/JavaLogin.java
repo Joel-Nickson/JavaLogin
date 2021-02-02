@@ -1,8 +1,9 @@
+import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class JavaLogin{
+public class JavaLogin implements ActionListener{
 	static String insert="insert into logintable(name,username,password) ";
 	static String select="select * from logintable ";
 	static JFrame f;
@@ -31,9 +32,12 @@ public class JavaLogin{
 		f.add(newJpanel);
 
 		f.setLayout(new FlowLayout());
-        	f.setSize(300,200);
-        	f.setVisible(true);
-        	f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    	f.setSize(300,200);
+    	f.setVisible(true);
+    	f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+	public void actionPerformed(ActionEvent e){
 
 	}
 	static JPanel Login_one(){
@@ -42,14 +46,16 @@ public class JavaLogin{
 		s_loginbutton = new JPanel();
 		s_panel = new JPanel();
 		
-		user = new JTextField("Username");
-		JLabel label = new JLabel("\t BLA BLA BLA ");		// TODO : make the textfield round
+		user = new JTextField(13);
+		JLabel label = new JLabel("<html><h1> BLA BLA BLA </h1></html>");		// TODO : make the textfield round
+		JLabel username = new JLabel(" Username ");
 		
 		s_panel.setLayout(new BorderLayout());
 		s_loginbutton.setLayout(new FlowLayout());
 		s_login_one.setLayout(new BorderLayout());
 		
-		s_panel.add(label,BorderLayout.CENTER);
+		s_panel.add(label,BorderLayout.NORTH);
+		s_panel.add(username,BorderLayout.CENTER);
 		s_panel.add(user,BorderLayout.SOUTH);
 
 		s_loginbutton.add(next);
