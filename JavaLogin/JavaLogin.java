@@ -32,12 +32,28 @@ public class JavaLogin implements ActionListener{
 		f.add(newJpanel);
 
 		f.setLayout(new FlowLayout());
-    	f.setSize(300,200);
-    	f.setVisible(true);
-    	f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(300,200);
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
 	public void actionPerformed(ActionEvent e){
+		f = new JFrame("Framey");
+		JPanel newJpanel = new JPanel();
+
+		if(e.getSource()==nutton1){	
+			newJpanel = page2();
+
+		}
+		else if(e.getSource()==signup){			
+			newJpanel = page3();
+
+		}
+		f.add(newJpanel);
+		f.setLayout(new FlowLayout());
+		f.setSize(300,200);
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
 	static JPanel Login_one(){
