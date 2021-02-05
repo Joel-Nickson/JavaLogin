@@ -9,7 +9,7 @@ public class JavaLogin implements ActionListener{
 	static JFrame f;
 	static JButton signin ,sinbutton ,signup ,supbutton ,next ,done ,retry;
 	static JTextField name ,user ,pass;
-	static JPanel s_up ,s_uppage ,s_upbutton ,s_in ,s_inpage ,s_inbutton ,s_login ,s_loginbutton ,s_panel ,newJpanel;
+	static JPanel newJpanel;
 	static JPanel s_login_one ;
 	static ResultSet rs;
 	static String database_name, username, password ,n ,u ,p;
@@ -24,8 +24,6 @@ public class JavaLogin implements ActionListener{
 		next.addActionListener(this);
 		done = new JButton("Done");
 		done.addActionListener(this);
-		retry = new JButton("retry");
-		retry.addActionListener(this);
 		
 		newJpanel = Login_one(); // replace the Login_one() with your methods to test them out
 		
